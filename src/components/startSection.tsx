@@ -47,7 +47,7 @@ export default function StartSection() {
             </p>
 
             <div className="mt-10 flex gap-6">
-              <button className="hire  font-bold text-lg px-6 py-2 rounded-full cursor-pointer">
+              <button className="hire font-bold text-lg px-6 py-2 rounded-full cursor-pointer">
                 Hire Me
               </button>
 
