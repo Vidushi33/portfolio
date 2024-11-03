@@ -2,6 +2,7 @@ import About from "@/components/about";
 import BackgroundBubble from "@/components/backgroundBubble";
 import ContactForm from "@/components/contactForm";
 import ExperienceSection from "@/components/experience";
+import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
@@ -20,6 +21,8 @@ export default function Page() {
           {/* <Projects /> */}
           <Skills />
           <ContactForm />
+
+          <Footer />
         </div>
       </div>
     </div>

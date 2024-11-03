@@ -5,16 +5,29 @@ import React from "react";
 const Skills = () => {
   return (
     <div className="bg-black  h-screen">
-      <div className="grid grid-cols-7 items-center gap-6">
-        {SKILLS.map((datum, index) => (
+      <div className="grid grid-cols-7 justify-center items-center gap-6">
+        {SKILLS.slice(0, 7).map((datum, index) => (
           <Image
             key={index}
             src={datum.image}
             alt="Skill Logo"
-            width={400}
-            height={400}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 500px"
+            width={200}
+            height={200}
+            className="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110"
           />
+        ))}
+      </div>
+
+      <div className="flex justify-center items-center gap-6 ">
+        {SKILLS.slice(7, 13).map((datum, index) => (
+          <Image
+            key={index}
+            src={datum.image}
+            alt="Skill Logo"
+            width={200}
+            height={200}
+            className="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110"
+           />
         ))}
       </div>
     </div>
