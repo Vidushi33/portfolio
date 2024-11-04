@@ -1,3 +1,5 @@
+"use client"
+
 import { NAVBAR_ITEMS } from "@/utils/constants";
 import Github from "@Icons/github";
 import LinkedIn from "@Icons/linkedin";
@@ -38,8 +40,14 @@ const Footer = () => {
               <p
                 key={index}
                 className=" cursor-pointer hover:text-primaryColor"
+                onClick={() => {
+                    const section = document.getElementById(item.id);
+                    if (section) {
+                      section.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
               >
-                <Link href="">{item.name}</Link>
+                {item.name}
               </p>
             ))}
           </div>

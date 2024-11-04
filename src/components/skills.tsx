@@ -4,7 +4,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div className="bg-black  h-screen">
+    <div className="bg-black  h-screen" id="skills">
       <div className="grid grid-cols-7 justify-center items-center gap-6">
         {SKILLS.slice(0, 7).map((datum, index) => (
           <Image

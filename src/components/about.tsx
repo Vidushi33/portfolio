@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className=" grid grid-cols-2 justify-center items-center h-screen">
+    <div className=" grid grid-cols-2 justify-center items-center h-screen" id="about">
       <div></div>
       <div className="w-full  p-10 glass-card">
         <h1 className="text-center font-bold text-3xl text-primaryColor tracking-widest">

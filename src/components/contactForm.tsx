@@ -22,7 +22,7 @@ export default function ContactForm() {
   const onSubmit: SubmitHandler<IFormInput> = async (data: any) => {};
 
   return (
-    <div className="grid grid-cols-2">
+    <div className="grid grid-cols-2" id="contact"> 
       <div className="flex ">
         <form
           onSubmit={handleSubmit(onSubmit)}

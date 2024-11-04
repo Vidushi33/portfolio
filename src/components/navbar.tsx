@@ -1,5 +1,7 @@
-import { NAVBAR_ITEMS } from "@/utils/constants";
+"use client"
+
 import React from "react";
+import { NAVBAR_ITEMS } from "@/utils/constants";
 
 export default function Navbar() {
   return (
@@ -11,6 +13,13 @@ export default function Navbar() {
           <p
             key={index}
             className="font-semibold text-xl cursor-pointer hover:text-primaryColor"
+            onClick={() => {
+              const section = document.getElementById(item.id);
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+      
           >
             {item.name}
           </p>

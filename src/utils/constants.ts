@@ -20,11 +20,12 @@ import {
 } from "@Image/index";
 
 export const NAVBAR_ITEMS = [
-  { name: "About", link: "" },
-  { name: "Projects", link: "" },
-  { name: "Journey", link: "" },
-  { name: "Certificate", link: "" },
-  { name: "Contact Me", link: "" },
+  { name: "About", id: "about" },
+  { name: "Projects", id: "projects" },
+  { name: "Skills", id: "skills" },
+  { name: "Journey", id: "journey" },
+  { name: "Certificate", id: "certificate" },
+  { name: "Contact Me", id: "contact" },
 ];
 
 export const PROJECTS = [

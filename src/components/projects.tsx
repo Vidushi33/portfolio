@@ -4,7 +4,7 @@ import ProjectCard from "./projectCard";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col h-Screen text-white">
+    <div className="flex flex-col h-Screen text-white" id="projects">
       <div className="flex justify-center">
         <h1 className=" font-bold text-4xl text-primaryColor tracking-widest">
           Projects
