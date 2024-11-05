@@ -2,9 +2,11 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className=" grid grid-cols-2 justify-center items-center h-screen" id="about">
+    <div className=" grid grid-cols-2 justify-center items-center h-screen relative " id="about">
       <div></div>
-      <div className="w-full  p-10 glass-card">
+      <div className="w-60 h-60 about-gradient rounded-full absolute filter blur-[10rem] right-1/4 top-[15%]"></div>
+      <div className="w-60 h-60 about-gradient rounded-full absolute filter blur-[10rem] right-10 bottom-[15%]"></div>
+      <div className="w-full  p-10 glass-card ">
         <h1 className="text-center font-bold text-3xl text-primaryColor tracking-widest">
           About Me
         </h1>

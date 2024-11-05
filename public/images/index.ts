@@ -17,8 +17,12 @@ const TailwindCss = "/images/tailwind.avif"
 const TypeScript = "/images/ts.avif"
 const VersionControl = "/images/version.avif"
 const Zustand = "/images/zustand.avif"
+const Contact = "/images/contact.avif"
+const ContactMe = "/images/contact-me.avif"
 
 export{
+    ContactMe,
+    Contact,
     Zustand,
     VersionControl,
     TypeScript,

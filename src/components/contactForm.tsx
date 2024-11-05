@@ -1,7 +1,9 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { SubmitHandler, useForm } from "react-hook-form";
+import { Contact, ContactMe } from "@Image/index";
 
 interface IFormInput {
   name: string;
@@ -95,7 +97,9 @@ export default function ContactForm() {
         </form>
       </div>
 
-      <div></div>
+      <div className="flex justify-center items-center">
+        <Image alt="contact image" src={Contact} width={500} height={500}  />
+      </div>
     </div>
   );
 }
