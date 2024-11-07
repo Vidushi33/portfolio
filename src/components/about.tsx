@@ -7,7 +7,7 @@ export default function About() {
       <div className="w-60 h-60 about-gradient rounded-full absolute filter blur-[10rem] right-1/4 top-[15%]"></div>
       <div className="w-60 h-60 about-gradient rounded-full absolute filter blur-[10rem] right-10 bottom-[15%]"></div>
       <div className="w-full  p-10 glass-card ">
-        <h1 className="text-center font-bold text-3xl text-primaryColor tracking-widest">
+        <h1 className="text-center font-bold text-4xl text-primaryColor tracking-widest">
           About Me
         </h1>
 

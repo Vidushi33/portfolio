@@ -48,7 +48,7 @@ body {
 
 /* about us card */
 .glass-card {
-  position: relative;
+  position: relative; 
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.15),
@@ -109,4 +109,27 @@ body {
 
 .about-gradient {
   background: linear-gradient(90deg, #ff69b4 0%, #aa82d3 100%);
+}
+
+@keyframes move-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.border-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px; 
+  background: linear-gradient(90deg, #3490dc, #ff66c4, #6610f2, #3490dc);
+  background-size: 200%; 
+  animation: move-border 4s linear infinite;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
 }

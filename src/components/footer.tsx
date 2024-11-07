@@ -1,26 +1,21 @@
-"use client"
+"use client";
 
 import { NAVBAR_ITEMS } from "@/utils/constants";
 import Github from "@Icons/github";
+import Instagram from "@Icons/instagram";
 import LinkedIn from "@Icons/linkedin";
 import Link from "next/link";
 import { useEffect } from "react";
 
 const Footer = () => {
-  //   const scrollToTop = () => {
-  //     if (typeof window !== "undefined") {
-  //       window.scrollTo({ top: 0, behavior: "smooth" });
-  //     }
-  //   };
 
   return (
-    <footer className="mt-40 mb-20">
-      <div className="">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer className="mt-40 px-10  border-t border-gray-700 py-6">
+      <div className="flex justify-between">
+        {/* <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="logo-text font-bold text-4xl text-[#ff69b480]">
             PORTFOLIO
           </div>
-          {/* About Section */}
           <div className="text-center md:text-left">
             <h3 className="text-xl font-semibold mb-2 text-primaryColor">
               About Me
@@ -31,7 +26,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Navigation Links */}
           <div className="mx-auto">
             <h3 className="text-xl font-semibold mb-2 text-primaryColor">
               Quick Links
@@ -52,7 +46,6 @@ const Footer = () => {
             ))}
           </div>
 
-          {/* Contact & Social Media Links */}
           <div className="">
             <h3 className="text-xl font-semibold mb-2 text-primaryColor">
               Connect with Me
@@ -84,11 +77,34 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        {/* Copyright & Back to Top */}
-        <div className="text-center text-sm mt-8 border-t border-gray-700 pt-4">
-          <p>© {new Date().getFullYear()} Your Name. All Rights Reserved.</p>
+        <p>© {new Date().getFullYear()} All Rights Reserved.</p>
+
+        <div>
+          <div className="flex items-center gap-4">
+            <Link
+              href="https://linkedin.com/in/yourprofile"
+              target="_blank"
+              className="hover:text-white"
+            >
+              <LinkedIn />
+            </Link>
+            <Link
+              href="https://github.com/yourusername"
+              target="_blank"
+              className="hover:text-white"
+            >
+              <Github />
+            </Link>
+            <Link
+              href="https://github.com/yourusername"
+              target="_blank"
+              className="hover:text-white"
+            >
+              <Instagram />
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

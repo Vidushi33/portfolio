@@ -93,3 +93,5 @@ export const SKILLS = [
   { image: MongoDb },
   { image: TypeScript },
 ];
+
+export const EXPERIENCE = []

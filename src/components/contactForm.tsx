@@ -24,13 +24,14 @@ export default function ContactForm() {
   const onSubmit: SubmitHandler<IFormInput> = async (data: any) => {};
 
   return (
-    <div className="grid grid-cols-2" id="contact"> 
-      <div className="flex ">
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="bg-opacity-50  backdrop-blur-md rounded-lg p-8 w-8/12 space-y-6"
-        >
-          <h2 className="text-3xl text-primaryColor font-semibold mb-6">Contact Me</h2>
+    <div className="grid grid-cols-2 gap-10 relative" id="contact">
+      <div className="w-60 h-60 about-gradient rounded-full absolute filter blur-[10rem]  left-10 top-[9%]"></div>
+      <div className="w-60 h-60 about-gradient rounded-full absolute filter  blur-[10rem] left-[30%] bottom-[10%]"></div>
+      <div className="flex w-full  p-16 glass-card ">
+        <form onSubmit={handleSubmit(onSubmit)} className=" w-full space-y-6">
+          <h2 className="text-4xl text-primaryColor font-semibold mb-6">
+            Contact Me
+          </h2>
 
           <div>
             <label className="block text-white font-medium mb-1">Name</label>
@@ -90,15 +91,25 @@ export default function ContactForm() {
 
           <button
             type="submit"
-            className="hire  w-full py-3  font-bold text-lg px-6 rounded-xl cursor-pointer"
+            className="hire  w-fit py-3  font-bold text-lg px-16 rounded-xl cursor-pointer"
           >
             Submit
           </button>
         </form>
       </div>
 
-      <div className="flex justify-center items-center">
-        <Image alt="contact image" src={Contact} width={500} height={500}  />
+      <div className=" flex justify-center items-center  w-full">
+        <div className="flex flex-col gap-10 ">
+          <Image alt="contact image" src={Contact} width={500} height={500} />
+          <div className="flex flex-col gap-4 mx-auto text-center">
+            <p className="text-lg font-semibold">
+              Email Id - <span>vidushimalik135@gmail.com</span>
+            </p>
+            <p className="text-lg font-semibold">
+              Phone Number - <span>9582576231</span>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
