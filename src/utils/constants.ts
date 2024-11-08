@@ -1,3 +1,7 @@
+import Exp1 from "@Icons/exp1";
+import Exp2 from "@Icons/exp2";
+import Exp3 from "@Icons/exp3";
+import Exp4 from "@Icons/exp4";
 import {
   AntD,
   BookManagementImage,
@@ -94,4 +98,33 @@ export const SKILLS = [
   { image: TypeScript },
 ];
 
-export const EXPERIENCE = []
+export const EXPERIENCE = [
+  {
+    icon: Exp1,
+    designation: "Junior Software Engineer",
+    company: "Khan Global Studies Pvt.Ltd",
+    responsibility:
+      "Enhanced the e-commerce bookstore with new features and continued functionality development while building a piracy prevention tool website from scratch using Next.js(Page Routing), Tailwind CSS and TypeScript",
+  },
+  {
+    icon: Exp4,
+    designation: "Software Engineer Intern",
+    company: "Khan Global Studies Pvt.Ltd",
+    responsibility:
+      "Developed the complete frontend for an e-commerce bookstore, implementing responsive UI, seamless user experience, and API integrations using Next.js(App Routing), Tailwind CSS and TypeScript",
+  },
+  {
+    icon: Exp2,
+    designation: "Web Developer",
+    company: "Value Plus Consultants Pvt. Ltd.",
+    responsibility:
+      "Worked on a Superpanel and dynamic Panel frontend and API integration for a no-code platform, enabling users to build custom features and layouts without coding using Nextjs",
+  },
+  {
+    icon: Exp3,
+    designation: "Mern Stack Developer",
+    company: "Entremax Global Solutions",
+    responsibility:
+      "Implemented secure authentication and authorization APIs, integrated Razorpay payment gateway, and contributed to UI enhancements to improve user experience.",
+  },
+];
