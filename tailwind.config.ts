@@ -10,7 +10,8 @@ const config: Config = {
     extend: {
       colors: {
         textTeal: '#00ffff',
-        primaryColor:'#ff69b4'
+        primaryColor:'#ff69b4',
+        secondaryColor:'#FF97C1'
       },
       boxShadow:{
         bubbleShadow:"inset 0 0 10px rgba(255, 253, 253, 0.5)"

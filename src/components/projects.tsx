@@ -1,5 +1,5 @@
-import { PROJECTS } from "@/utils/constants";
 import React from "react";
+import { PROJECTS } from "@/utils/constants";
 import ProjectCard from "./projectCard";
 
 const Projects = () => {
@@ -11,7 +11,7 @@ const Projects = () => {
         </h1>
       </div>
 
-      <div className="my-20 flex flex-col gap-20">
+      <div className="my-20 grid grid-cols-3 gap-10">
         {PROJECTS.map((datum, index) => (
           <ProjectCard
             key={index}

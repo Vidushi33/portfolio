@@ -13,7 +13,7 @@ const Skills = () => {
             alt="Skill Logo"
             width={200}
             height={200}
-            className="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110"
+            className="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-125"
           />
         ))}
       </div>
@@ -26,7 +26,7 @@ const Skills = () => {
             alt="Skill Logo"
             width={200}
             height={200}
-            className="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110"
+            className="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-125"
            />
         ))}
       </div>
