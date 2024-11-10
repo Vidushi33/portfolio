@@ -103,10 +103,10 @@ export default function ContactForm() {
           <Image alt="contact image" src={Contact} width={500} height={500} />
           <div className="flex flex-col gap-4 mx-auto text-center">
             <p className="text-lg font-semibold">
-              Email Id - <span>vidushimalik135@gmail.com</span>
+              Email Id - <span className="text-secondaryColor font-semibold">vidushimalik135@gmail.com</span>
             </p>
             <p className="text-lg font-semibold">
-              Phone Number - <span>9582576231</span>
+              Phone Number - <span className="text-secondaryColor font-semibold">9582576231</span>
             </p>
           </div>
         </div>
