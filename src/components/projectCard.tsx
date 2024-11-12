@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 
 interface IProps {
   projectName: string;
@@ -73,36 +74,32 @@ const ProjectCard = ({
         />
 
         <div className="absolute inset-0 bg-gray-200 bg-opacity-90 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          {/* Live Demo Icon */}
-          <a
+          <Link
             href={`${liveUrl}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-700"
           >
-            {liveUrl}
-          </a>
+            <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
+          </Link>
 
-          {/* GitHub Code Icon */}
-          <a
+          <Link
             href={`${githubUrl}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-800 hover:text-gray-600"
           >
-            {githubUrl}
-          </a>
+            <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
+          </Link>
         </div>
       </div>
 
-      {/* Project Details */}
       <div className="p-4 bg-white">
         <h1 className="text-2xl font-bold text-pink-500 mb-4">{projectName}</h1>
         <span className="font-semibold">Skills</span> -
         <span> {skillsUsed}</span>
       </div>
 
-      {/* Hover Overlay */}
     </div>
   );
 };
