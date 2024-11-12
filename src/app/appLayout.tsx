@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-=======
 "use client";
 
 import React, { useEffect, useState } from "react";
@@ -8,16 +5,12 @@ import "./globals.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import TopIcon from "@Icons/topIcon";
->>>>>>> 5270672 (adding data to repo)
 
 const AppLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
-<<<<<<< HEAD
-  return <>{children}</>;
-=======
   const [showButton, setShowButton] = useState(false);
 
   const handleScroll = () => {
@@ -75,7 +68,6 @@ const AppLayout = ({
       )}
     </>
   );
->>>>>>> 5270672 (adding data to repo)
 };
 
 export default AppLayout;

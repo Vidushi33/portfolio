@@ -24,11 +24,7 @@ export default function ContactForm() {
   const onSubmit: SubmitHandler<IFormInput> = async (data: any) => {};
 
   return (
-<<<<<<< HEAD
-    <div className="grid grid-cols-2 gap-10 relative" id="contact">
-=======
     <div className="grid grid-cols-2 gap-10 my-40 relative"  data-aos="fade-up" id="contact">
->>>>>>> 5270672 (adding data to repo)
       <div className="w-60 h-60 about-gradient rounded-full absolute filter blur-[10rem]  left-10 top-[9%]"></div>
       <div className="w-60 h-60 about-gradient rounded-full absolute filter  blur-[10rem] left-[30%] bottom-[10%]"></div>
       <div className="flex w-full  p-16 glass-card ">
