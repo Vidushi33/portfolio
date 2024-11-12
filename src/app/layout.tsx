@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import AppLayout from "./appLayout";
-<<<<<<< HEAD
-import "./globals.css";
-=======
-
->>>>>>> 5270672 (adding data to repo)
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -25,7 +25,7 @@ export default function StartSection() {
   }, []);
 
   return (
-    <div className="grid grid-cols-2 h-[80vh]" data-aos="fade-up"> 
+    <div className="grid grid-cols-2 h-[80vh]" data-aos="fade-up">
       <div className="flex justify-center items-center">
         <div className="flex">
           <div className="  ">
@@ -47,7 +47,15 @@ export default function StartSection() {
             </p>
 
             <div className="mt-10 flex gap-6">
-              <button className="hire font-bold text-lg px-6 py-2 rounded-full cursor-pointer">
+              <button
+                className="hire font-bold text-lg px-6 py-2 rounded-full cursor-pointer"
+                onClick={() => {
+                  const section = document.getElementById("contact");
+                  if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+              >
                 Hire Me
               </button>
 
@@ -65,6 +73,31 @@ export default function StartSection() {
                   </a>
                 </div>
               </div>
+            </div>
+
+            <div className="flex items-center gap-4 mt-6">
+              <p className="text-lg font-semibold">Follow me - </p>
+              <Link
+                href="https://linkedin.com/in/yourprofile"
+                target="_blank"
+                className="hover:text-white"
+              >
+                <LinkedIn />
+              </Link>
+              <Link
+                href="https://github.com/yourusername"
+                target="_blank"
+                className="hover:text-white"
+              >
+                <Github />
+              </Link>
+              <Link
+                href="https://github.com/yourusername"
+                target="_blank"
+                className="hover:text-white"
+              >
+                <Instagram />
+              </Link>
             </div>
           </div>
         </div>
