@@ -13,7 +13,11 @@ export default function Page() {
     <div className="relative w-full min-h-screen bg-black text-white overflow-x-hidden">
       {/* <BackgroundBubble /> */}
       <Navbar />
+<<<<<<< HEAD
       <div className="mx-auto w-10/12">
+=======
+      <div className="mx-auto w-10/12 ">
+>>>>>>> 5270672 (adding data to repo)
         <StartSection />
         <About />
         <Skills />

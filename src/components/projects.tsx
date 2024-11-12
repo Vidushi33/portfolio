@@ -4,6 +4,7 @@ import ProjectCard from "./projectCard";
 
 const Projects = () => {
   return (
+<<<<<<< HEAD
     <div className="flex flex-col h-Screen text-white" id="projects">
       <div className="flex justify-center">
         <h1 className=" font-bold text-4xl text-primaryColor tracking-widest">
@@ -12,6 +13,16 @@ const Projects = () => {
       </div>
 
       <div className="my-20 grid grid-cols-3 gap-10">
+=======
+    <div className="flex flex-col  my-40 text-white" data-aos="fade-up" id="projects">
+      <div className="flex justify-center">
+        <h1 className=" font-bold text-4xl text-primaryColor tracking-widest">
+          My Work
+        </h1>
+      </div>
+
+      <div className="my-10 grid grid-cols-3 gap-10">
+>>>>>>> 5270672 (adding data to repo)
         {PROJECTS.map((datum, index) => (
           <ProjectCard
             key={index}

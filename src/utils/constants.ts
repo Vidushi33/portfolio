@@ -25,17 +25,28 @@ import {
 
 export const NAVBAR_ITEMS = [
   { name: "About", id: "about" },
+<<<<<<< HEAD
   { name: "Projects", id: "projects" },
   { name: "Skills", id: "skills" },
   { name: "Journey", id: "journey" },
   { name: "Certificate", id: "certificate" },
+=======
+  { name: "Skills", id: "skills" },
+  { name: "Journey", id: "journey" },
+  { name: "Projects", id: "projects" },
+  // { name: "Certificate", id: "certificate" },
+>>>>>>> 5270672 (adding data to repo)
   { name: "Contact Me", id: "contact" },
 ];
 
 export const PROJECTS = [
   {
     name: "Personal Portfolio",
+<<<<<<< HEAD
     desc: "A modern and responsive portfolio built with Next.js, TypeScript, and Tailwind CSS. This project showcases my skills, projects, and experience as a frontend developer, with a focus on clean design, smooth navigation, and fast performance.",
+=======
+    desc: "Built a responsive portfolio using Next.js and Tailwind CSS to showcase projects, skills, and experience with a sleek UI.",
+>>>>>>> 5270672 (adding data to repo)
     image: PortfolioImage,
     skills: "Next.js, TypeScript, Tailwind CSS",
     github_link: "",
@@ -43,7 +54,11 @@ export const PROJECTS = [
   },
   {
     name: "Parking System",
+<<<<<<< HEAD
     desc: "Its a parking system project based on MERN Stack technology.This parking system will allot a slots based on the first availability.It fetches the entry and exit timings and calculate the money accordingly.User can pay via cash or online mode.",
+=======
+    desc: "Developed an entry-exit software for parking facilities, automating slot reservations and enhancing user convenience.",
+>>>>>>> 5270672 (adding data to repo)
     image: ParkingStystemImage,
     skills: "Reactjs, Nodejs, Expressjs, MongoDB",
     github_link: "https://github.com/Vidushi33/Parking-System",
@@ -51,7 +66,11 @@ export const PROJECTS = [
   },
   {
     name: "Movie Data",
+<<<<<<< HEAD
     desc: "It is a project displaying various movies with their data. It is a React.Js based application. Every movie has a different summary that onclick routes to another page.",
+=======
+    desc: "Fetches data from API , routes using Search Params and books the tickets using a basic form.",
+>>>>>>> 5270672 (adding data to repo)
     image: MovieImage,
     skills: "Reactjs, React Hook Forms",
     github_link: "https://github.com/Vidushi33/Movie-Data",
@@ -59,14 +78,22 @@ export const PROJECTS = [
   },
   {
     name: "Book-Company-Backend",
+<<<<<<< HEAD
     desc: "It is a back end project for a book company. Technologies used in this project are NodeJs , ExpressJs and MongoDB. It consists of multiple routes having functionalities of GET, POST , PUT and DELETE.",
+=======
+    desc: "Created a RESTful API with Express.js and MongoDB for CRUD operations on books, authors, and collections.",
+>>>>>>> 5270672 (adding data to repo)
     image: MovieImage,
     skills: "Nodejs, Expressjs, MongoDB",
     github_link: "https://github.com/Vidushi33/Book-Company-Backend",
   },
   {
     name: "Book Management",
+<<<<<<< HEAD
     desc: "This project includes HTML, Bootstrap , CSS and JavaScript.It is basically based on the CRUD operation of JavaScript.We can add, read, modify and delete the book entries according to our convenience and need.",
+=======
+    desc: "Built a JavaScript CRUD app for managing books using HTML, Bootstrap, and CSS.",
+>>>>>>> 5270672 (adding data to repo)
     image: BookManagementImage,
     skills: "HTML , CSS, Bootstrap, Javascript",
     github_link: "https://github.com/Vidushi33/Book-Management-System",
@@ -74,7 +101,11 @@ export const PROJECTS = [
   },
   {
     name: "Restaurant Management Site",
+<<<<<<< HEAD
     desc: "It is a responsive restaurant based website created using HTML , CSS and Bootstrap. It is a static front end project.",
+=======
+    desc: "Developed a responsive restaurant website using HTML, CSS, and Bootstrap for a static frontend layout.",
+>>>>>>> 5270672 (adding data to repo)
     image: RestaurantImage,
     skills: "HTML , CSS, Bootstrap",
     github_link: "https://github.com/Vidushi33/Restaurant-Management-Website",

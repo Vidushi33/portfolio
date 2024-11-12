@@ -1,7 +1,16 @@
 "use client";
 
+<<<<<<< HEAD
 import { HeroImage } from "@Image/index";
 import Image from "next/image";
+=======
+import Github from "@Icons/github";
+import Instagram from "@Icons/instagram";
+import LinkedIn from "@Icons/linkedin";
+import { HeroImage } from "@Image/index";
+import Image from "next/image";
+import Link from "next/link";
+>>>>>>> 5270672 (adding data to repo)
 import React, { useEffect, useState } from "react";
 
 export default function StartSection() {
@@ -21,6 +30,7 @@ export default function StartSection() {
   }, []);
 
   return (
+<<<<<<< HEAD
     <div className="grid grid-cols-2 h-screen ">
       <div className="flex justify-center items-center">
         <div className=" flex">
@@ -29,6 +39,12 @@ export default function StartSection() {
           </div>
 
           <div className=" w-[85%] ">
+=======
+    <div className="grid grid-cols-2 h-[80vh]" data-aos="fade-up"> 
+      <div className="flex justify-center items-center">
+        <div className="flex">
+          <div className="  ">
+>>>>>>> 5270672 (adding data to repo)
             <h2 className="text-3xl font-medium">Hello, </h2>
             <h1 className=" text-3xl font-medium py-5 leading-normal">
               I&apos;m{" "}
@@ -56,9 +72,19 @@ export default function StartSection() {
                   <span className="inline-block transition-transform duration-500 ease-out group-hover:translate-y-[-120%]">
                     Download CV
                   </span>
+<<<<<<< HEAD
                   <span className="absolute rounded-full inset-0 flex items-center justify-center  font-bold transition-transform duration-500 ease-out bg-white text-black  group-hover:translate-y-0 translate-y-[120%]">
                     Download Now 📥
                   </span>
+=======
+                  <a
+                    href="/cv.pdf"
+                    download="Vidushi-Malik-CV.pdf"
+                    className="absolute rounded-full inset-0 flex items-center justify-center font-bold transition-transform duration-500 ease-out bg-white text-black group-hover:translate-y-0 translate-y-[120%]"
+                  >
+                    Download Now 📥
+                  </a>
+>>>>>>> 5270672 (adding data to repo)
                 </div>
               </div>
             </div>
@@ -66,7 +92,11 @@ export default function StartSection() {
         </div>
       </div>
 
+<<<<<<< HEAD
       <div className=" flex justify-center items-center ">
+=======
+      <div className=" flex  justify-center items-center ">
+>>>>>>> 5270672 (adding data to repo)
         <div className="flex justify-center items-center">
           <Image
             src={HeroImage}

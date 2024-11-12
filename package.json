@@ -11,6 +11,10 @@
   "dependencies": {
     "@heroicons/react": "^2.1.5",
     "antd": "^5.19.1",
+<<<<<<< HEAD
+=======
+    "aos": "^2.3.4",
+>>>>>>> 5270672 (adding data to repo)
     "emailjs-com": "^3.2.0",
     "next": "^14.2.5",
     "react": "^18.3.1",
@@ -18,6 +22,10 @@
     "react-hook-form": "^7.53.1"
   },
   "devDependencies": {
+<<<<<<< HEAD
+=======
+    "@types/aos": "^3.0.7",
+>>>>>>> 5270672 (adding data to repo)
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

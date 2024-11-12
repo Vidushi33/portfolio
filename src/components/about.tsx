@@ -2,7 +2,11 @@ import React from "react";
 
 export default function About() {
   return (
+<<<<<<< HEAD
     <div className=" grid grid-cols-2 justify-center items-center h-screen relative " id="about">
+=======
+    <div className=" grid grid-cols-2 justify-center items-center my-40 relative " data-aos="fade-up" id="about">
+>>>>>>> 5270672 (adding data to repo)
       <div></div>
       <div className="w-60 h-60 about-gradient rounded-full absolute filter blur-[10rem] right-1/4 top-[15%]"></div>
       <div className="w-60 h-60 about-gradient rounded-full absolute filter blur-[10rem] right-10 bottom-[15%]"></div>
