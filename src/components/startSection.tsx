@@ -77,21 +77,21 @@ export default function StartSection() {
 
             <div className="flex items-center gap-4 mt-6">
               <Link
-                href="https://linkedin.com/in/yourprofile"
+                href="https://www.linkedin.com/in/vidushi-malik-11263b1ab/"
                 target="_blank"
                 className="hover:text-white"
               >
                 <LinkedIn />
               </Link>
               <Link
-                href="https://github.com/yourusername"
+                href="https://github.com/Vidushi33/portfolio"
                 target="_blank"
                 className="hover:text-white"
               >
                 <Github />
               </Link>
               <Link
-                href="https://github.com/yourusername"
+                href="#"
                 target="_blank"
                 className="hover:text-white"
               >
@@ -102,16 +102,14 @@ export default function StartSection() {
         </div>
       </div>
 
-      <div className=" flex  justify-center items-center ">
-        <div className="flex justify-center items-center">
+      <div className=" flex  justify-end items-center ">
           <Image
             src={HeroImage}
             alt="Image next to Name"
-            width={0}
-            height={0}
-            className="w-3/5"
+            width={500}
+            height={500}
+            className="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-125"
           />
-        </div>
       </div>
     </div>
   );
