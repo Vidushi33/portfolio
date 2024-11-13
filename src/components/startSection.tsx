@@ -76,7 +76,6 @@ export default function StartSection() {
             </div>
 
             <div className="flex items-center gap-4 mt-6">
-              <p className="text-lg font-semibold">Follow me - </p>
               <Link
                 href="https://linkedin.com/in/yourprofile"
                 target="_blank"

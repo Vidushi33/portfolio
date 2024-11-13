@@ -38,7 +38,7 @@ export const PROJECTS = [
     desc: "Built a responsive portfolio using Next.js and Tailwind CSS to showcase projects, skills, and experience with a sleek UI.",
     image: PortfolioImage,
     skills: "Next.js, TypeScript, Tailwind CSS",
-    github_link: "",
+    github_link: "https://github.com/Vidushi33/portfolio",
     live_demo: "",
   },
   {
