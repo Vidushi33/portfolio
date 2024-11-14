@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="mt-40 px-10  border-t border-gray-700 py-6">
       <div className="flex justify-between">
-        <p>© {new Date().getFullYear()} All Rights Reserved.</p>
+        <p>© {new Date().getFullYear()} All Rights Reserved. Designed by Vidushi Malik.</p>
 
         <div>
           <div className="flex items-center gap-4">

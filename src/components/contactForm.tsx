@@ -24,7 +24,11 @@ export default function ContactForm() {
   const onSubmit: SubmitHandler<IFormInput> = async (data: any) => {};
 
   return (
-    <div className="grid grid-cols-2 gap-10 my-40 relative"  data-aos="fade-up" id="contact">
+    <div
+      className="grid grid-cols-2 gap-10 my-40 relative"
+      data-aos="fade-up"
+      id="contact"
+    >
       <div className="w-60 h-60 about-gradient rounded-full absolute filter blur-[10rem]  left-10 top-[9%]"></div>
       <div className="w-60 h-60 about-gradient rounded-full absolute filter  blur-[10rem] left-[30%] bottom-[10%]"></div>
       <div className="flex w-full  p-16 glass-card ">
@@ -100,13 +104,32 @@ export default function ContactForm() {
 
       <div className=" flex justify-center items-center  w-full">
         <div className="flex flex-col gap-10 ">
-          <Image alt="contact image" src={Contact} width={500} height={500} />
+          <Image
+            alt="contact image"
+            src={Contact}
+            width={500}
+            height={500}
+            draggable={false}
+            className="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105"
+          />
           <div className="flex flex-col gap-4 mx-auto text-center">
             <p className="text-lg font-semibold">
-              Email Id - <span className="text-secondaryColor font-semibold">vidushimalik135@gmail.com</span>
+              Email Id -{" "}
+              <a
+                href="mailto:vidushimalik135@gmail.com"
+                className="text-secondaryColor font-semibold hover:text-pink-500 hover:underline hover:scale-110 transition-transform duration-200 cursor-pointer"
+              >
+                vidushimalik135@gmail.com
+              </a>
             </p>
             <p className="text-lg font-semibold">
-              Phone Number - <span className="text-secondaryColor font-semibold">9582576231</span>
+              Phone Number -{" "}
+              <a
+                href="tel:+919582576231"
+                className="text-secondaryColor font-semibold hover:text-pink-500 hover:underline hover:scale-110 transition-transform duration-200 cursor-pointer"
+              >
+                9582576231
+              </a>
             </p>
           </div>
         </div>

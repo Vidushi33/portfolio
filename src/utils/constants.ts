@@ -34,14 +34,6 @@ export const NAVBAR_ITEMS = [
 
 export const PROJECTS = [
   {
-    name: "Personal Portfolio",
-    desc: "Built a responsive portfolio using Next.js and Tailwind CSS to showcase projects, skills, and experience with a sleek UI.",
-    image: PortfolioImage,
-    skills: "Next.js, TypeScript, Tailwind CSS",
-    github_link: "https://github.com/Vidushi33/portfolio",
-    live_demo: "",
-  },
-  {
     name: "Parking System",
     desc: "Developed an entry-exit software for parking facilities, automating slot reservations and enhancing user convenience.",
     image: ParkingStystemImage,

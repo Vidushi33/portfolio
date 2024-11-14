@@ -7,7 +7,7 @@ const Projects = () => {
     <div className="flex flex-col  my-40 text-white" data-aos="fade-up" id="projects">
       <div className="flex justify-center">
         <h1 className=" font-bold text-4xl text-primaryColor tracking-widest">
-          My Work
+          Projects
         </h1>
       </div>
 

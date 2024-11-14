@@ -13,12 +13,12 @@ export default function ExperienceSection() {
             key={index}
             className="relative p-[2px]  rounded-lg overflow-hidden"
           >
-            <div className="relative z-10 bg-gray-900 h-[22rem] text-white p-8 rounded-lg flex flex-col gap-7">
-              <div>
+            <div className="relative z-10 bg-gray-900 h-[24rem] text-white p-8 rounded-lg flex flex-col gap-7">
+              <div className="!h-[10rem] ">
                 <exp.icon />
               </div>
-              <div>
-                <h2 className="text-xl font-semibold">{exp.designation}</h2>
+              <div className=" !h-[14rem]">
+                <h2 className="text-xl font-semibold text-primaryColor">{exp.designation}</h2>
                 <p className="opacity-70 ">{exp.company}</p>
                 <p className=" mt-4 text-sm">{exp.responsibility}</p>
               </div>

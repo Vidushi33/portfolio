@@ -9,8 +9,8 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 export default function StartSection() {
-  const [bio, setBio] = useState("Software Developer");
-  const options = ["Software Developer", "Web Developer", "Frontend Developer"];
+  const [bio, setBio] = useState("Software");
+  const options = ["Software", "Web", "Frontend"];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -25,7 +25,7 @@ export default function StartSection() {
   }, []);
 
   return (
-    <div className="grid md:grid-cols-2 md:h-[50vh] lg:h-[65vh]  xl:h-[80vh]" data-aos="fade-up">
+    <div className="grid md:grid-cols-2 md:h-[50vh] lg:h-[65vh] xl:h-[80vh]" data-aos="fade-up">
       <div className="flex justify-center items-center">
         <div className="flex">
           <div className="  ">
@@ -40,8 +40,8 @@ export default function StartSection() {
             <p className="text-lg md:text-xl lg:text-2xl font-medium leading-normal h-[5rem] lg:h-[7rem]">
               I&apos;m a{" "}
               <span className="text-3xl lg:text-4xl font-bold change-bio text-primaryColor">
-                {bio}{" "}
-              </span>
+                {bio}{" "}Developer
+              </span><br />
               specializing in modern web applications and dynamic user
               experiences.
             </p>
@@ -109,6 +109,7 @@ export default function StartSection() {
             width={500}
             height={500}
             className="cursor-pointer w-8/12 md:w-10/12 xl:w-8/12 transition-transform duration-300 ease-in-out hover:scale-105"
+            draggable={false}
           />
       </div>
     </div>
