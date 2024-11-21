@@ -25,7 +25,7 @@ export default function StartSection() {
   }, []);
 
   return (
-    <div className="grid md:grid-cols-2 md:h-[50vh] lg:h-[65vh] xl:h-[80vh]" data-aos="fade-up">
+    <div className="grid md:grid-cols-2 md:h-[50vh] lg:h-[65vh] xl:h-[80vh] " data-aos="fade-up">
       <div className="flex justify-center items-center">
         <div className="flex">
           <div className="  ">

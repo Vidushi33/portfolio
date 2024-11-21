@@ -10,8 +10,8 @@ import { useEffect } from "react";
 const Footer = () => {
 
   return (
-    <footer className="mt-40 px-10  border-t border-gray-700 py-6">
-      <div className="flex justify-between">
+    <footer className="mt-40  border-t border-gray-700 py-6">
+      <div className="flex justify-between px-3 lg:px-0 w-full lg:w-11/12 mx-auto">
         <p>© {new Date().getFullYear()} All Rights Reserved. Designed by Vidushi Malik.</p>
 
         <div>

@@ -1,8 +1,8 @@
 export default function Exp1() {
   return (
     <svg
-      width="95"
-      height="87"
+      width="123"
+      height="98"
       viewBox="0 0 95 87"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

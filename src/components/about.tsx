@@ -1,32 +1,34 @@
-import { HeroImage } from "@Image/index";
+import { HeroImage, Me } from "@Image/index";
 import Image from "next/image";
 import React from "react";
 
 export default function About() {
   return (
     <div
-      className=" grid lg:grid-cols-2  justify-center items-center  my-20 md:my-32 2xl:my-40 relative "
+      className=" grid grid-cols-[40%_60%] xl:grid-cols-[45%_55%] 2xl:grid-cols-2  justify-center items-center  my-20 2xl:my-40 relative "
       data-aos="fade-up"
       id="about"
     >
-      <div className="flex mt-6 md:mt-0 justify-center items-center ">
-        <Image
-          src={HeroImage}
-          alt="Image next to Name"
-          width={500}
-          height={500}
-          className="cursor-pointer w-8/12 md:w-10/12 xl:w-8/12 transition-transform duration-300 ease-in-out hover:scale-105"
-          draggable={false}
-        />
+      <div className="flex mt-6 md:mt-0 2xl:justify-center  items-center ">
+        <div className="w-11/12 lg:w-10/12 2xl:w-8/12">
+          <Image
+            src={Me}
+            alt="Image next to Name"
+            width={460}
+            height={45}
+            className="rounded-full duration-300 ease-in-out hover:scale-105"
+            draggable={false}
+          />
+        </div>
       </div>
       <div className="w-60 h-60 about-gradient rounded-full absolute filter blur-[10rem] right-1/4 top-[15%]"></div>
       <div className="w-60 h-60 about-gradient rounded-full absolute filter blur-[10rem] right-10 bottom-[15%]"></div>
       <div className="w-full p-4 xl:p-10 glass-card ">
-        <h1 className="text-center font-bold text-3xl xl:text-4xl text-primaryColor tracking-widest">
+        <h1 className="text-center font-bold text-2xl lg:text-3xl xl:text-4xl text-primaryColor tracking-widest">
           About Me
         </h1>
 
-        <div className="leading-relaxed tracking-wider mt-4 xl:mt-10 flex flex-col gap-5 xl:gap-8 text-base lg:text-lg">
+        <div className="leading-relaxed tracking-wider mt-4 xl:mt-10 flex flex-col gap-3 lg:gap-5 xl:gap-8 text-sm lg:text-base xl:text-lg">
           <p>
             I&apos;m <b className="text-secondaryColor">Vidushi Malik</b>, a
             dedicated Web Developer with a strong background in creating
@@ -57,7 +59,7 @@ export default function About() {
             </b>{" "}
             and exploring new Frameworks and Tools. I&apos;m constantly
             exploring new trends and techniques in Web Development, with a
-            particular interest in
+            particular interest in{" "}
             <b className="text-secondaryColor">
               Front-end performance optimization
             </b>

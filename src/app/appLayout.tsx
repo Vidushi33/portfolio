@@ -61,7 +61,7 @@ const AppLayout = ({
       {showButton && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-20 right-5 p-3  text-white rounded-full shadow-lg"
+          className="fixed bottom-20 right-5 p-3  z-50 text-white rounded-full shadow-lg"
         >
           <TopIcon />
         </button>

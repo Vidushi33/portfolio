@@ -19,8 +19,10 @@ const VersionControl = "/images/version.avif"
 const Zustand = "/images/zustand.avif"
 const Contact = "/images/contact.avif"
 const ContactMe = "/images/contact-me.avif"
+const Me = "/images/me.avif"
 
 export{
+    Me,
     ContactMe,
     Contact,
     Zustand,
