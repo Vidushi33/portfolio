@@ -14,9 +14,10 @@ import {
   NextJs,
   NodeJs,
   ParkingStystemImage,
-  PortfolioImage,
+  PirafyImage,
   ReactJs,
   RestaurantImage,
+  StoreImage,
   TailwindCss,
   TypeScript,
   VersionControl,
@@ -33,6 +34,20 @@ export const NAVBAR_ITEMS = [
 ];
 
 export const PROJECTS = [
+  {
+    name: "Khan Global Studies Store",
+    desc: "Developed the KGS Store frontend with responsive UI, dynamic features, and pixel-perfect Figma designs for a seamless user experience.",
+    image: StoreImage,
+    skills: "Nextjs(App Routing), Tailwind CSS, React Hook Forms, ",
+    live_demo: "https://store.khanglobalstudies.com/",
+  },
+  {
+    name: "Pirafy",
+    desc: "Developed Pirafy's UI with modern gradients, responsiveness, and optimized code for a seamless user experience.",
+    image: PirafyImage,
+    skills: "Nextjs(Page Routing), Tailwind CSS",
+    live_demo: "https://pirafy.com/",
+  },
   {
     name: "Parking System",
     desc: "Developed an entry-exit software for parking facilities, automating slot reservations and enhancing user convenience.",
@@ -52,7 +67,7 @@ export const PROJECTS = [
   {
     name: "Book-Company-Backend",
     desc: "Created a RESTful API with Express.js and MongoDB for CRUD operations on books, authors, and collections.",
-    image: MovieImage,
+    image: "",
     skills: "Nodejs, Expressjs, MongoDB",
     github_link: "https://github.com/Vidushi33/Book-Company-Backend",
   },
@@ -64,14 +79,14 @@ export const PROJECTS = [
     github_link: "https://github.com/Vidushi33/Book-Management-System",
     live_demo: "https://vidushi33.github.io/Book-Management-System/",
   },
-  {
-    name: "Restaurant Management Site",
-    desc: "Developed a responsive restaurant website using HTML, CSS, and Bootstrap for a static frontend layout.",
-    image: RestaurantImage,
-    skills: "HTML , CSS, Bootstrap",
-    github_link: "https://github.com/Vidushi33/Restaurant-Management-Website",
-    live_demo: "https://vidushi33.github.io/Restaurant-Management-Website/",
-  },
+  // {
+  //   name: "Restaurant Management Site",
+  //   desc: "Developed a responsive restaurant website using HTML, CSS, and Bootstrap for a static frontend layout.",
+  //   image: RestaurantImage,
+  //   skills: "HTML , CSS, Bootstrap",
+  //   github_link: "https://github.com/Vidushi33/Restaurant-Management-Website",
+  //   live_demo: "https://vidushi33.github.io/Restaurant-Management-Website/",
+  // },
 ];
 
 export const SKILLS = [
