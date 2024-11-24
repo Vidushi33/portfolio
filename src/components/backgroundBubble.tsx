@@ -10,7 +10,7 @@ export default function BackgroundBubble() {
 
   return (
     <div className=" absolute inset-0 overflow-hidden ">
-      {[...range(30)].map((index) => (
+      {[...range(100)].map((index) => (
         <div
           key={index}
           style={getBubbleStyles()}

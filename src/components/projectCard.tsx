@@ -9,8 +9,8 @@ interface IProps {
   projectDesc: string;
   image: any;
   skillsUsed: string;
-  githubUrl: string;
-  liveUrl: string;
+  githubUrl?: string;
+  liveUrl?: string;
   order: boolean;
 }
 

@@ -95,7 +95,7 @@ export default function ContactForm() {
 
           <button
             type="submit"
-            className="hire  w-fit py-3  font-bold text-lg px-16 rounded-xl cursor-pointer"
+            className="hire  w-fit py-3   font-bold text-lg px-16 rounded-xl cursor-pointer hover:opacity-80"
           >
             Submit
           </button>

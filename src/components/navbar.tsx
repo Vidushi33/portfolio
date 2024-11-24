@@ -1,9 +1,12 @@
 "use client"
 
-import React from "react";
+import React, { useEffect } from "react";
 import { NAVBAR_ITEMS } from "@/utils/constants";
 
 export default function Navbar() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className=" relative  flex justify-between items-center py-4 px-3 lg:px-0 w-full lg:w-11/12 mx-auto"
      data-aos="fade-right"

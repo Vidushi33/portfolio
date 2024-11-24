@@ -135,3 +135,38 @@ export const EXPERIENCE = [
       "Implemented secure authentication and authorization APIs, integrated Razorpay payment gateway, and contributed to UI enhancements to improve user experience.",
   },
 ];
+
+export const BREAKPOINTS = {
+  576: {
+    slidesPerView: 2,
+    spaceBetween: 10,
+  },
+  768: {
+    slidesPerView: 3,
+    spaceBetween: 20,
+  },
+  992: {
+    slidesPerView: 3,
+    spaceBetween: 30,
+  },
+  1200: {
+    slidesPerView: 3,
+    spaceBetween: 35,
+  },
+  1401: {
+    slidesPerView: 3,
+    spaceBetween: 40,
+  },
+  1601: {
+    slidesPerView: 4,
+    spaceBetween: 50,
+  },
+  1800: {
+    slidesPerView: 4,
+    spaceBetween: 50,
+  },
+};
+
+export const CERTIFICATES = [
+  {image : ""}
+]

@@ -137,3 +137,27 @@ body {
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
 }
+
+
+#btn {
+  background-color: #1c1f2b;
+  color: #fff;
+  overflow: hidden;
+}
+
+#btn::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-linear-gradient(left, rgb(255, 255, 255, 0) 0%, rgb(255, 255, 255, 0.4) 50%, transparent 50%);
+  top: 0;
+  bottom: 0;
+  transform: skew(-45deg);
+  left: -100%;
+  transition: 0.5s;
+}
+
+#btn:hover::before {
+  left: 100%;
+}

@@ -25,11 +25,16 @@ export default function StartSection() {
   }, []);
 
   return (
-    <div className="grid md:grid-cols-2 md:h-[50vh] lg:h-[65vh] xl:h-[80vh] " data-aos="fade-up">
+    <div
+      className="grid md:grid-cols-2 md:h-[50vh] lg:h-[65vh] xl:h-[80vh] "
+      data-aos="fade-up"
+    >
       <div className="flex justify-center items-center">
         <div className="flex">
           <div className="  ">
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-medium">Hello, </h2>
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-medium">
+              Hello,{" "}
+            </h2>
             <h1 className="text-xl md:text-2xl lg:text-3xl font-medium py-3 xl:py-5 leading-normal">
               I&apos;m{" "}
               <span className="text-3xl md:text-4xl lg:text-5xl font-bold shiny-text">
@@ -40,15 +45,17 @@ export default function StartSection() {
             <p className="text-lg md:text-xl lg:text-2xl font-medium leading-normal h-[5rem] lg:h-[7rem]">
               I&apos;m a{" "}
               <span className="text-3xl lg:text-4xl font-bold change-bio text-primaryColor">
-                {bio}{" "}Developer
-              </span><br />
+                {bio} Developer
+              </span>
+              <br />
               specializing in modern web applications and dynamic user
               experiences.
             </p>
 
-            <div className="mt-10 flex items-center gap-6">
+            <div className="mt-10  flex items-center gap-6">
               <button
-                className="hire font-bold text-base md:text-lg  px-6 py-2 rounded-full cursor-pointer"
+                id="btn"
+                className="hire font-bold  relative text-base md:text-lg  px-6 py-2 rounded-full cursor-pointer"
                 onClick={() => {
                   const section = document.getElementById("contact");
                   if (section) {
@@ -90,11 +97,7 @@ export default function StartSection() {
               >
                 <Github />
               </Link>
-              <Link
-                href="#"
-                target="_blank"
-                className="hover:text-white"
-              >
+              <Link href="#" target="_blank" className="hover:text-white">
                 <Instagram />
               </Link>
             </div>
@@ -103,14 +106,14 @@ export default function StartSection() {
       </div>
 
       <div className="flex mt-6 md:mt-0 justify-center md:justify-end items-center ">
-          <Image
-            src={HeroImage}
-            alt="Image next to Name"
-            width={500}
-            height={500}
-            className="cursor-pointer w-8/12 md:w-10/12 xl:w-8/12 transition-transform duration-300 ease-in-out hover:scale-105"
-            draggable={false}
-          />
+        <Image
+          src={HeroImage}
+          alt="Image next to Name"
+          width={500}
+          height={500}
+          className="cursor-pointer w-8/12 md:w-10/12 xl:w-8/12 transition-transform duration-300 ease-in-out hover:scale-105"
+          draggable={false}
+        />
       </div>
     </div>
   );
