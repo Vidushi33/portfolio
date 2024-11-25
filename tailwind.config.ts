@@ -9,7 +9,6 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        textTeal: '#00ffff',
         primaryColor:'#ff69b4',
         secondaryColor:'#FF97C1'
       },

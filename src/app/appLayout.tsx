@@ -14,12 +14,10 @@ const AppLayout = ({
   const [showButton, setShowButton] = useState(false);
 
   const handleScroll = () => {
-    // Get the scroll position and the total height of the document
     const scrollPosition = window.scrollY;
     const documentHeight = document.documentElement.scrollHeight;
     const windowHeight = window.innerHeight;
 
-    // Check if the page is scrolled 40% (or more)
     if (scrollPosition / (documentHeight - windowHeight) >= 0.4) {
       setShowButton(true);
     } else {
@@ -35,10 +33,8 @@ const AppLayout = ({
   };
 
   useEffect(() => {
-    // Listen for scroll events
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listener
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -61,7 +57,7 @@ const AppLayout = ({
       {showButton && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-20 right-5 p-3  z-50 text-white rounded-full shadow-lg"
+          className="fixed bottom-32 sm:bottom-20 right-2 sm:right-5 p-3  z-50 text-white rounded-full shadow-lg"
         >
           <TopIcon />
         </button>

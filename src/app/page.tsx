@@ -11,9 +11,11 @@ import StartSection from "@/components/startSection";
 export default function Page() {
   return (
     <div className="relative w-full min-h-screen bg-black text-white overflow-x-hidden">
-      <BackgroundBubble />
+      <div className="hidden md:block">
+        <BackgroundBubble />
+      </div>
       <Navbar />
-      <div className="mx-auto px-3 lg:px-0 lg:w-11/12 xl:w-10/12 mt-4 lg:mt-2 xl:mt-0">
+      <div className="mx-auto px-3 lg:px-0 lg:w-11/12 xl:w-10/12 mt-4 lg:mt-2 xl:mt-0 relative z-30">
         <StartSection />
         <About />
         <Skills />

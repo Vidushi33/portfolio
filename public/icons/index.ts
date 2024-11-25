@@ -6,5 +6,16 @@ import Exp2 from "./exp2";
 import Exp3 from "./exp3";
 import Exp4 from "./exp4";
 import TopIcon from "./topIcon";
+import HamburgerIcon from "./hamburgerIcon";
 
-export { TopIcon,Exp4, Exp3, Exp2, Exp1, Instagram, LinkedIn, Github };
+export {
+  HamburgerIcon,
+  TopIcon,
+  Exp4,
+  Exp3,
+  Exp2,
+  Exp1,
+  Instagram,
+  LinkedIn,
+  Github,
+};

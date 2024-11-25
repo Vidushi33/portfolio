@@ -26,25 +26,25 @@ export default function StartSection() {
 
   return (
     <div
-      className="grid md:grid-cols-2 md:h-[50vh] lg:h-[65vh] xl:h-[80vh] "
+      className="grid md:grid-cols-2 md:h-[50vh] lg:h-[65vh] xl:h-[80vh]"
       data-aos="fade-up"
     >
       <div className="flex justify-center items-center">
         <div className="flex">
           <div className="  ">
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-medium">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">
               Hello,{" "}
             </h2>
-            <h1 className="text-xl md:text-2xl lg:text-3xl font-medium py-3 xl:py-5 leading-normal">
+            <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium py-3 xl:py-5 leading-normal">
               I&apos;m{" "}
-              <span className="text-3xl md:text-4xl lg:text-5xl font-bold shiny-text">
+              <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold shiny-text">
                 Vidushi Malik
               </span>
               ,
             </h1>
-            <p className="text-lg md:text-xl lg:text-2xl font-medium leading-normal h-[5rem] lg:h-[7rem]">
+            <p className="text-lg md:text-xl lg:text-2xl font-medium  leading-normal h-[6rem] md:h-[5rem] lg:h-[7rem]">
               I&apos;m a{" "}
-              <span className="text-3xl lg:text-4xl font-bold change-bio text-primaryColor">
+              <span className="text-2xl sm:text-3xl lg:text-4xl font-bold change-bio text-primaryColor">
                 {bio} Developer
               </span>
               <br />
@@ -52,10 +52,10 @@ export default function StartSection() {
               experiences.
             </p>
 
-            <div className="mt-10  flex items-center gap-6">
+            <div className="mt-10  md:flex items-center  md:gap-6">
               <button
                 id="btn"
-                className="hire font-bold  relative text-base md:text-lg  px-6 py-2 rounded-full cursor-pointer"
+                className="hire font-bold  relative w-full md:w-fit text-base md:text-lg px-6 py-2 rounded-full cursor-pointer"
                 onClick={() => {
                   const section = document.getElementById("contact");
                   if (section) {
@@ -66,7 +66,7 @@ export default function StartSection() {
                 Hire Me
               </button>
 
-              <div className=" relative inline-block overflow-hidden border-2 border-primaryColor rounded-full">
+              <div className="mt-4 md:mt-0 relative inline-block overflow-hidden w-full md:w-fit text-center border-2 border-primaryColor rounded-full">
                 <div className="group uppercase font-semibold text-base md:text-lg  cursor-pointer  px-10 py-2  relative">
                   <span className="inline-block transition-transform duration-500 ease-out group-hover:translate-y-[-120%]">
                     Download CV
@@ -105,7 +105,7 @@ export default function StartSection() {
         </div>
       </div>
 
-      <div className="flex mt-6 md:mt-0 justify-center md:justify-end items-center ">
+      <div className="hidden sm:flex mt-6 md:mt-0 justify-center md:justify-end items-center ">
         <Image
           src={HeroImage}
           alt="Image next to Name"

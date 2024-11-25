@@ -7,11 +7,11 @@ export default function ExperienceSection() {
       id="journey"
       data-aos="fade-up"
     >
-      <h1 className="text-center font-bold text-4xl text-primaryColor tracking-widest">
+      <h1 className="text-center font-bold text-2xl sm:text-4xl text-primaryColor tracking-widest">
         My Work Experience
       </h1>
 
-      <div className="w-full mt-10 2xl:mt-12 grid grid-cols-2 xl:grid-cols-4 gap-4 2xl:gap-10">
+      <div className="w-full mt-10 2xl:mt-12 grid sm:grid-cols-2 xl:grid-cols-4 gap-4 2xl:gap-10">
         {EXPERIENCE.map((exp, index) => (
           <div
             key={index}
@@ -21,7 +21,7 @@ export default function ExperienceSection() {
               <div className="h-[7rem] xl:h-[8rem] 2xl:h-[7rem]">
                 <exp.icon />
               </div>
-              <div className="h-[14rem] lg:h-[11rem] xl:h-[17rem] 2xl:!h-[14rem]">
+              <div className="h-[16rem] sm:h-[14rem] lg:h-[11rem] xl:h-[17rem] 2xl:!h-[14rem]">
                 <h2 className="text-lg 2xl:text-xl font-semibold text-primaryColor">
                   {exp.designation}
                 </h2>

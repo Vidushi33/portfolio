@@ -5,25 +5,25 @@ import React from "react";
 export default function About() {
   return (
     <div
-      className=" grid grid-cols-[40%_60%] xl:grid-cols-[45%_55%] 2xl:grid-cols-2  justify-center items-center  my-20 2xl:my-40 relative "
+      className=" grid sm:grid-cols-[40%_60%] xl:grid-cols-[45%_55%] 2xl:grid-cols-2  justify-center items-center my-10 sm:my-20 2xl:my-40 relative "
       data-aos="fade-up"
       id="about"
     >
-      <div className="flex mt-6 md:mt-0 2xl:justify-center  items-center ">
-        <div className="w-11/12 lg:w-10/12 2xl:w-8/12">
+      <div className="flex mt-6 md:mt-0 justify-center sm:justify-normal 2xl:justify-center  items-center ">
+        <div className="w-8/12 sm:w-11/12 lg:w-10/12 2xl:w-8/12">
           <Image
             src={Me}
             alt="Image next to Name"
             width={460}
             height={45}
-            className="rounded-full duration-300 ease-in-out hover:scale-105"
+            className="sm:rounded-full duration-300 ease-in-out hover:scale-105"
             draggable={false}
           />
         </div>
       </div>
       <div className="w-60 h-60 about-gradient rounded-full absolute filter blur-[10rem] right-1/4 top-[15%]"></div>
       <div className="w-60 h-60 about-gradient rounded-full absolute filter blur-[10rem] right-10 bottom-[15%]"></div>
-      <div className="w-full p-4 xl:p-10 glass-card ">
+      <div className="w-full  sm:p-4 xl:p-10  mt-8 sm:mt-0">
         <h1 className="text-center font-bold text-2xl lg:text-3xl xl:text-4xl text-primaryColor tracking-widest">
           About Me
         </h1>

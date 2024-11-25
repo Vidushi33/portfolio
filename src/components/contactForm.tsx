@@ -25,15 +25,15 @@ export default function ContactForm() {
 
   return (
     <div
-      className="grid grid-cols-[55%_45%] xl:grid-cols-2 gap-4 lg:gap-10 xl:gap-10 my-20 2xl:my-40 relative"
+      className="grid sm:grid-cols-[55%_45%] xl:grid-cols-2 gap-4 lg:gap-10 xl:gap-10 my-10 sm:my-20 2xl:my-40 relative"
       data-aos="fade-up"
       id="contact"
     >
       <div className="w-60 h-60 about-gradient rounded-full absolute filter blur-[10rem]  left-10 top-[9%]"></div>
       <div className="w-60 h-60 about-gradient rounded-full absolute filter  blur-[10rem] left-[30%] bottom-[10%]"></div>
-      <div className="flex w-full p-6 lg:p-8 xl:p-12 2xl:p-16 glass-card ">
+      <div className="flex w-full p-4 sm:p-6 lg:p-8 xl:p-12 2xl:p-16 glass-card ">
         <form onSubmit={handleSubmit(onSubmit)} className=" w-full space-y-6">
-          <h2 className="text-4xl text-primaryColor font-semibold mb-6">
+          <h2 className="text-2xl sm:text-4xl text-primaryColor font-semibold mb-6">
             Contact Me
           </h2>
 
@@ -95,14 +95,14 @@ export default function ContactForm() {
 
           <button
             type="submit"
-            className="hire  w-fit py-3   font-bold text-lg px-16 rounded-xl cursor-pointer hover:opacity-80"
+            className="hire  w-fit py-3   font-bold  sm:text-lg px-16 rounded-xl cursor-pointer hover:opacity-80"
           >
             Submit
           </button>
         </form>
       </div>
 
-      <div className=" flex justify-center items-center  w-full">
+      <div className="hidden sm:flex justify-center items-center  w-full">
         <div className="flex flex-col gap-10">
           <div className="mx-auto w-10/12 xl:w-full">
             <Image
