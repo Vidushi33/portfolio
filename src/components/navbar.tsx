@@ -39,8 +39,15 @@ export default function Navbar() {
               className="font-semibold text-xl cursor-pointer hover:text-primaryColor"
               onClick={() => {
                 const section = document.getElementById(item.id);
+                const navbarHeight = 60;
                 if (section) {
-                  section.scrollIntoView({ behavior: "smooth" });
+                  const yOffset = -navbarHeight;
+                  const y =
+                    section.getBoundingClientRect().top +
+                    window.scrollY +
+                    yOffset;
+
+                  window.scrollTo({ top: y, behavior: "smooth" });
                 }
               }}
             >
@@ -74,8 +81,15 @@ export default function Navbar() {
                       setIsSidebarOpen(false);
 
                       const section = document.getElementById(item.id);
+                      const navbarHeight = 100;
                       if (section) {
-                        section.scrollIntoView({ behavior: "smooth" });
+                        const yOffset = -navbarHeight;
+                        const y =
+                          section.getBoundingClientRect().top +
+                          window.scrollY +
+                          yOffset;
+
+                        window.scrollTo({ top: y, behavior: "smooth" });
                       }
                     }}
                     className={`py-2 px-4 font-semibold rounded-full text-primaryColor text-lg w-10/12 `}

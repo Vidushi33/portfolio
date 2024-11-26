@@ -4,7 +4,11 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div className="my-10 sm:my-20 2xl:my-40" id="skills" data-aos="fade-up">
+    <div
+      className="my-10 sm:my-20 2xl:my-40"
+      id="skills"
+      data-aos="fade-up"
+    >
       <h1 className="text-center font-bold text-2xl sm:text-4xl text-primaryColor tracking-wide">
         Tech Stack
       </h1>
