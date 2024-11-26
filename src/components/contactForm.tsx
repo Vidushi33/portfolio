@@ -1,14 +1,16 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { Contact, ContactMe } from "@Image/index";
+import emailjs from "@emailjs/browser";
+import { Contact } from "@Image/index";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 interface IFormInput {
   name: string;
   email: string;
-  subject: string;
   message: string;
 }
 
@@ -21,7 +23,41 @@ export default function ContactForm() {
     reset,
   } = useForm<IFormInput>();
 
-  const onSubmit: SubmitHandler<IFormInput> = async (data: any) => {};
+  const onSubmit: SubmitHandler<IFormInput> = async (data) => {
+    // console.log(data)
+    try {
+      const result = await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        {
+          name: data.name,
+          email: data.email,
+          message: data.message,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
+      toast.success("Form Submitted Successfully!", {
+        position: "top-center",
+        autoClose: 6000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: false,
+        draggable: false,
+      });
+
+      reset();
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      toast.error("Failed to send email. Please try again.", {
+        position: "top-center",
+        autoClose: 6000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: false,
+        draggable: false,
+      });
+    }
+  };
 
   return (
     <div
@@ -31,6 +67,7 @@ export default function ContactForm() {
     >
       <div className="w-60 h-60 about-gradient rounded-full absolute filter blur-[10rem]  left-10 top-[9%]"></div>
       <div className="w-60 h-60 about-gradient rounded-full absolute filter  blur-[10rem] left-[30%] bottom-[10%]"></div>
+
       <div className="flex w-full p-4 sm:p-6 lg:p-8 xl:p-12 2xl:p-16 glass-card ">
         <form onSubmit={handleSubmit(onSubmit)} className=" w-full space-y-6">
           <h2 className="text-2xl sm:text-4xl text-primaryColor font-semibold mb-6">
@@ -43,11 +80,17 @@ export default function ContactForm() {
               type="text"
               id="name"
               placeholder="Enter your name"
-              {...register("name", { required: true })}
+              {...register("name", {
+                required: true,
+                minLength: {
+                  value: 3,
+                  message: "Name must be at least 3 characters long",
+                },
+              })}
               className="w-full p-3 bg-opacity-20 bg-white text-white placeholder-white  rounded-lg outline-none"
             />
             {errors.name && (
-              <span className="text-red-500">Name is required</span>
+              <span className="text-red-500">{errors.name.message}</span>
             )}
           </div>
 
@@ -57,25 +100,17 @@ export default function ContactForm() {
               type="email"
               id="email"
               placeholder="Enter your email"
-              {...register("email", { required: true })}
+              {...register("email", {
+                required: true,
+                pattern: {
+                  value: /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/,
+                  message: "Please enter a valid email",
+                },
+              })}
               className="w-full p-3 bg-opacity-20 bg-white text-white placeholder-white  rounded-lg outline-none"
             />
             {errors.email && (
-              <span className="text-red-500">Email is required</span>
-            )}
-          </div>
-
-          <div>
-            <label className="block text-white font-medium mb-1">Subject</label>
-            <input
-              type="text"
-              id="subject"
-              placeholder="Enter subject"
-              {...register("subject", { required: true })}
-              className="w-full p-3 bg-opacity-20 bg-white text-white placeholder-white  rounded-lg outline-none"
-            />
-            {errors.subject && (
-              <span className="text-red-500">Subject is required</span>
+              <span className="text-red-500">{errors.email.message}</span>
             )}
           </div>
 
@@ -136,6 +171,8 @@ export default function ContactForm() {
           </div>
         </div>
       </div>
+
+      <ToastContainer />
     </div>
   );
 }
