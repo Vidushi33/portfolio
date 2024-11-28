@@ -54,7 +54,7 @@ const ProjectCard = ({
         </div>
       </div>
       <div className="rounded-b-xl text-black  bg-white p-2 lg:p-4 h-fit sm:h-44 lg:h-52 xl:h-44">
-        <h1 className="text-lg lg:text-xl xl:text-2xl font-bold text-pink-500 ">{projectName}</h1>
+        <h4 className="text-lg lg:text-xl xl:text-2xl font-bold text-pink-500 ">{projectName}</h4>
         <span className="font-semibold text-sm">Skills</span> -
         <span className="text-sm"> {skillsUsed}</span>
         <p className="mt-3 text-sm">{projectDesc}</p>

@@ -9,9 +9,9 @@ const Skills = () => {
       id="skills"
       data-aos="fade-up"
     >
-      <h1 className="text-center font-bold text-2xl sm:text-4xl text-primaryColor tracking-wide">
+      <h3 className="text-center font-bold text-2xl sm:text-4xl text-primaryColor tracking-wide">
         Tech Stack
-      </h1>
+      </h3>
       <div className=" hidden xl:grid grid-cols-7 justify-center items-center gap-6">
         {SKILLS.slice(0, 7).map((datum, index) => (
           <Image

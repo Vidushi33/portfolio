@@ -32,9 +32,9 @@ const Certifications = () => {
   return (
     <div>
       <div className="flex justify-center">
-        <h1 className=" font-bold text-4xl text-primaryColor tracking-widest">
+        <h2 className=" font-bold text-4xl text-primaryColor tracking-widest">
           Achievments
-        </h1>
+        </h2>
       </div>
 
       <div>

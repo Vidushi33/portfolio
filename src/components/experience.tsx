@@ -7,9 +7,9 @@ export default function ExperienceSection() {
       id="journey"
       data-aos="fade-up"
     >
-      <h1 className="text-center font-bold text-2xl sm:text-4xl text-primaryColor tracking-widest">
+      <h3 className="text-center font-bold text-2xl sm:text-4xl text-primaryColor tracking-widest">
         My Work Experience
-      </h1>
+      </h3>
 
       <div className="w-full mt-10 2xl:mt-12 grid sm:grid-cols-2 xl:grid-cols-4 gap-4 2xl:gap-10">
         {EXPERIENCE.map((exp, index) => (
@@ -31,7 +31,6 @@ export default function ExperienceSection() {
             </div>
             <div className="animate-rotate absolute  inset-0 h-full w-full rounded-full bg-[conic-gradient(#ff69b4_20deg,transparent_120deg)] "></div>
 
-            {/* <div className="animate-rotate absolute inset-0 h-full w-full rounded-full bg-[conic-gradient(#0ea5e9_20deg,transparent_120deg)]"></div> */}
           </div>
         ))}
       </div>

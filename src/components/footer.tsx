@@ -1,11 +1,9 @@
 "use client";
 
-import { NAVBAR_ITEMS } from "@/utils/constants";
 import Github from "@Icons/github";
 import Instagram from "@Icons/instagram";
 import LinkedIn from "@Icons/linkedin";
 import Link from "next/link";
-import { useEffect } from "react";
 
 const Footer = () => {
 

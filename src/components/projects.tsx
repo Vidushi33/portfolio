@@ -6,9 +6,9 @@ const Projects = () => {
   return (
     <div className="flex flex-col  my-10 sm:my-20 2xl:my-40 text-white" data-aos="fade-up" id="projects">
       <div className="flex justify-center">
-        <h1 className=" font-bold text-2xl sm:text-4xl text-primaryColor tracking-widest">
+        <h3 className=" font-bold text-2xl sm:text-4xl text-primaryColor tracking-widest">
           Projects
-        </h1>
+        </h3>
       </div>
 
       <div className="my-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-4 lg:gap-10">
