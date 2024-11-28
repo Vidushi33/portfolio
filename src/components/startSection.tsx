@@ -111,7 +111,7 @@ export default function StartSection() {
           alt="Image next to Name"
           width={500}
           height={500}
-          className="cursor-pointer w-8/12 md:w-10/12 xl:w-8/12 transition-transform duration-300 ease-in-out hover:scale-105"
+          className="w-8/12 md:w-10/12 xl:w-8/12 transition-transform duration-300 ease-in-out hover:scale-105"
           draggable={false}
         />
       </div>

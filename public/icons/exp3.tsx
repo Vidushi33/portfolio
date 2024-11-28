@@ -66,8 +66,8 @@ export default function Exp3() {
           y2="61.7067"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFAD4B" />
-          <stop offset="1" stop-color="#77007C" />
+          <stop stopColor="#FFAD4B" />
+          <stop offset="1" stopColor="#77007C" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_3307_660"
@@ -77,8 +77,8 @@ export default function Exp3() {
           y2="74.3469"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFAD4B" />
-          <stop offset="1" stop-color="#77007C" />
+          <stop stopColor="#FFAD4B" />
+          <stop offset="1" stopColor="#77007C" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_3307_660"
@@ -88,8 +88,8 @@ export default function Exp3() {
           y2="13.0387"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#461885" />
-          <stop offset="1" stop-color="#AA51E0" />
+          <stop stopColor="#461885" />
+          <stop offset="1" stopColor="#AA51E0" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_3307_660"
@@ -99,8 +99,8 @@ export default function Exp3() {
           y2="103.158"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFAD4B" />
-          <stop offset="1" stop-color="#77007C" />
+          <stop stopColor="#FFAD4B" />
+          <stop offset="1" stopColor="#77007C" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_3307_660"
@@ -110,8 +110,8 @@ export default function Exp3() {
           y2="50.4582"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#461885" />
-          <stop offset="1" stop-color="#AA51E0" />
+          <stop stopColor="#461885" />
+          <stop offset="1" stopColor="#AA51E0" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_3307_660"
@@ -121,8 +121,8 @@ export default function Exp3() {
           y2="103.681"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#AA51E0" />
-          <stop offset="1" stop-color="#461885" />
+          <stop stopColor="#AA51E0" />
+          <stop offset="1" stopColor="#461885" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_3307_660"
@@ -132,8 +132,8 @@ export default function Exp3() {
           y2="77.1208"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#AA51E0" />
-          <stop offset="1" stop-color="#461885" />
+          <stop stopColor="#AA51E0" />
+          <stop offset="1" stopColor="#461885" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_3307_660"
@@ -143,8 +143,8 @@ export default function Exp3() {
           y2="81.8392"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#AA51E0" />
-          <stop offset="1" stop-color="#461885" />
+          <stop stopColor="#AA51E0" />
+          <stop offset="1" stopColor="#461885" />
         </linearGradient>
         <linearGradient
           id="paint8_linear_3307_660"
@@ -154,8 +154,8 @@ export default function Exp3() {
           y2="77.0606"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#461885" />
-          <stop offset="1" stop-color="#AA51E0" />
+          <stop stopColor="#461885" />
+          <stop offset="1" stopColor="#AA51E0" />
         </linearGradient>
         <linearGradient
           id="paint9_linear_3307_660"
@@ -165,8 +165,8 @@ export default function Exp3() {
           y2="44.6129"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFAD4B" />
-          <stop offset="1" stop-color="#77007C" stop-opacity="0" />
+          <stop stopColor="#FFAD4B" />
+          <stop offset="1" stopColor="#77007C" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint10_linear_3307_660"
@@ -176,8 +176,8 @@ export default function Exp3() {
           y2="37.3778"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFAD4B" />
-          <stop offset="1" stop-color="#77007C" stop-opacity="0" />
+          <stop stopColor="#FFAD4B" />
+          <stop offset="1" stopColor="#77007C" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint11_linear_3307_660"
@@ -187,8 +187,8 @@ export default function Exp3() {
           y2="18.47"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFAD4B" />
-          <stop offset="1" stop-color="#77007C" />
+          <stop stopColor="#FFAD4B" />
+          <stop offset="1" stopColor="#77007C" />
         </linearGradient>
       </defs>
     </svg>

@@ -45,9 +45,8 @@ const AppLayout = ({
       duration: 1000,
       easing: "ease-in-out",
       once: true,
-      offset: 0,
+      offset: 400,
     });
-
     AOS.refresh();
   }, []);
 

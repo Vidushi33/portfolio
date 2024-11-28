@@ -65,9 +65,8 @@ export default function ContactForm() {
       data-aos="fade-up"
       id="contact"
     >
-      <div className="w-60 h-60 about-gradient rounded-full absolute filter blur-[10rem]  left-10 top-[9%]"></div>
-      <div className="w-60 h-60 about-gradient rounded-full absolute filter  blur-[10rem] left-[30%] bottom-[10%]"></div>
-
+      <div className="w-60 h-60 about-gradient rounded-full absolute filter blur-[12rem] lg:blur-[10rem]  left-10 top-[9%]"></div>
+      <div className="w-60 h-60 about-gradient rounded-full absolute filter blur-[12rem] lg:blur-[10rem] left-[30%] bottom-[10%]"></div>
       <div className="flex w-full p-4 sm:p-6 lg:p-8 xl:p-12 2xl:p-16 glass-card ">
         <form onSubmit={handleSubmit(onSubmit)} className=" w-full space-y-6">
           <h2 className="text-2xl sm:text-4xl text-primaryColor font-semibold mb-6">
@@ -146,7 +145,7 @@ export default function ContactForm() {
               width={500}
               height={500}
               draggable={false}
-              className="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105"
+              className="transition-transform duration-300 ease-in-out hover:scale-105"
             />
           </div>
           <div className="flex flex-col gap-4 mx-auto  text-center">
