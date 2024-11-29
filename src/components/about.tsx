@@ -21,8 +21,8 @@ export default function About() {
           />
         </div>
       </div>
-      <div className="w-60 h-60 about-gradient rounded-full absolute filter blur-[15rem] lg:blur-[13rem] right-1/4 top-[15%]"></div>
-      <div className="w-60 h-60 about-gradient rounded-full absolute filter blur-[15rem] lg:blur-[13rem] right-10 bottom-[15%]"></div>
+      <div className="w-60 h-60 about-gradient rounded-full absolute filter blur-[9rem] lg:blur-[12rem] right-1/4 top-[40%] md:top-[15%]"></div>
+      <div className="w-60 h-60 about-gradient rounded-full absolute filter blur-[9rem] lg:blur-[12rem] right-10 bottom-0 md:bottom-[15%]"></div>
       <div className="w-full  sm:p-4 xl:p-10  mt-8 sm:mt-0">
         <h1 className="text-center font-bold text-2xl lg:text-3xl xl:text-4xl text-primaryColor tracking-widest">
           About Me
